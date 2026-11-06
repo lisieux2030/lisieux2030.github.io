@@ -1,0 +1,2119 @@
+{
+ "note": "Projets à l'étude, non validés. horizon : 1 = premières étapes, 3 = le projet à terme.",
+ "scenarios": {
+  "avant": {
+   "label": "Aujourd'hui",
+   "sous_titre": "Le sanctuaire aujourd'hui"
+  },
+  "apres": {
+   "label": "Le projet",
+   "sous_titre": "Le projet à l'étude"
+  }
+ },
+ "horizons": [
+  1,
+  2,
+  3
+ ],
+ "interventions": [
+  {
+   "id": "accueil-guerites",
+   "label": "Accueil dans les guérites",
+   "theme": "accueil",
+   "horizon": 1,
+   "desc": "Les deux guérites en pierre deviendraient le point d'information du site, tenu par des bénévoles. Un totem signalerait l'accueil dès l'entrée du parking.",
+   "geom": [
+    {
+     "type": "hide",
+     "cible": "poi",
+     "id": "chalets"
+    },
+    {
+     "type": "hide",
+     "cible": "poi",
+     "id": "guerites"
+    },
+    {
+     "type": "hide",
+     "cible": "building",
+     "id": "osm-w130315527"
+    },
+    {
+     "type": "hide",
+     "cible": "building",
+     "id": "osm-w130324317"
+    },
+    {
+     "type": "box",
+     "cx": -14.0,
+     "cz": -82.5,
+     "w": 3.2,
+     "d": 3.2,
+     "h": 3.5,
+     "rot": 45,
+     "couleur": "#e8dcc4",
+     "label": "Guérite : information"
+    },
+    {
+     "type": "box",
+     "cx": -2.5,
+     "cz": -71.5,
+     "w": 3.2,
+     "d": 3.2,
+     "h": 3.5,
+     "rot": 45,
+     "couleur": "#e8dcc4",
+     "label": "Guérite : écoute"
+    },
+    {
+     "type": "sign",
+     "x": -86.0,
+     "z": 11.0,
+     "label": "Totem d'accueil : Sanctuaire Sainte-Thérèse",
+     "rot": 129.1
+    },
+    {
+     "type": "poi",
+     "id": "accueil",
+     "label": "Accueil",
+     "type_poi": "accueil",
+     "x": -8.0,
+     "z": -77.0,
+     "y": 0,
+     "desc": "Information pratique et lieu d'écoute dans les guérites."
+    }
+   ]
+  },
+  {
+   "id": "cheminement-central",
+   "label": "Cheminement piéton central",
+   "theme": "accueil",
+   "horizon": 1,
+   "desc": "Un cheminement piéton marqué au sol suivrait l'axe de l'allée d'origine, du giratoire au parvis, avec une dépose réservée aux cars.",
+   "geom": [
+    {
+     "type": "path",
+     "kind": "allee",
+     "pts": [
+      [
+       -94.0,
+       20.0
+      ],
+      [
+       -60.0,
+       -14.0
+      ],
+      [
+       -25.0,
+       -50.0
+      ],
+      [
+       15.0,
+       -114.0
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "type": "area",
+     "kind": "parking",
+     "poly": [
+      [
+       -84.0,
+       4.0
+      ],
+      [
+       -72.0,
+       3.0
+      ],
+      [
+       -74.0,
+       -3.0
+      ],
+      [
+       -86.0,
+       -2.0
+      ]
+     ],
+     "couleur": "#c9b98f",
+     "couche": 0
+    },
+    {
+     "type": "sign",
+     "x": -79.0,
+     "z": 6.0,
+     "label": "Dépose-minute cars",
+     "rot": 0
+    }
+   ]
+  },
+  {
+   "id": "bassin",
+   "label": "Le bassin du parvis",
+   "theme": "parvis",
+   "horizon": 3,
+   "desc": "Un bassin en pierre marquerait le cœur du parvis, avec des marches qui descendent vers l'eau.",
+   "geom": [
+    {
+     "type": "area",
+     "kind": "eau",
+     "poly": [
+      [
+       48.5,
+       -178.1
+      ],
+      [
+       47.5,
+       -175.6
+      ],
+      [
+       45.0,
+       -174.6
+      ],
+      [
+       42.5,
+       -175.6
+      ],
+      [
+       41.5,
+       -178.1
+      ],
+      [
+       42.5,
+       -180.6
+      ],
+      [
+       45.0,
+       -181.6
+      ],
+      [
+       47.5,
+       -180.6
+      ]
+     ],
+     "couleur": "#5d8fb0",
+     "couche": 6
+    },
+    {
+     "type": "area",
+     "kind": "parvis",
+     "poly": [
+      [
+       53.9,
+       -178.1
+      ],
+      [
+       53.2,
+       -174.7
+      ],
+      [
+       51.3,
+       -171.8
+      ],
+      [
+       48.4,
+       -169.9
+      ],
+      [
+       45.0,
+       -169.2
+      ],
+      [
+       41.6,
+       -169.9
+      ],
+      [
+       38.7,
+       -171.8
+      ],
+      [
+       36.8,
+       -174.7
+      ],
+      [
+       36.1,
+       -178.1
+      ],
+      [
+       36.8,
+       -181.5
+      ],
+      [
+       38.7,
+       -184.4
+      ],
+      [
+       41.6,
+       -186.3
+      ],
+      [
+       45.0,
+       -187.0
+      ],
+      [
+       48.4,
+       -186.3
+      ],
+      [
+       51.3,
+       -184.4
+      ],
+      [
+       53.2,
+       -181.5
+      ]
+     ],
+     "couleur": "#cdb994",
+     "couche": 5
+    }
+   ]
+  },
+  {
+   "id": "facade-mapping",
+   "label": "La façade illuminée",
+   "theme": "lumiere",
+   "horizon": 3,
+   "desc": "Chaque soir, la façade et le dôme seraient mis en lumière. Lors des grandes fêtes, des projections animeraient la façade.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 38.6,
+     "z": -215.8,
+     "y": 4.0,
+     "couleur": "#fff1c9",
+     "intensite": 1.0,
+     "label": "Totem de vidéoprojection",
+     "mat": false
+    },
+    {
+     "type": "light",
+     "x": 32.6,
+     "z": -193.6,
+     "y": 4.0,
+     "couleur": "#fff1c9",
+     "intensite": 1.0,
+     "label": "Totem de vidéoprojection",
+     "mat": false
+    },
+    {
+     "type": "light",
+     "x": 24.7,
+     "z": -164.7,
+     "y": 4.0,
+     "couleur": "#fff1c9",
+     "intensite": 1.0,
+     "label": "Totem de vidéoprojection",
+     "mat": false
+    },
+    {
+     "type": "light",
+     "x": 18.7,
+     "z": -142.5,
+     "y": 4.0,
+     "couleur": "#fff1c9",
+     "intensite": 1.0,
+     "label": "Totem de vidéoprojection",
+     "mat": false
+    },
+    {
+     "type": "cylinder",
+     "cx": 38.6,
+     "cz": -215.8,
+     "r": 0.4,
+     "h": 4,
+     "rot": 0,
+     "couleur": "#4a4a4a"
+    },
+    {
+     "type": "cylinder",
+     "cx": 32.6,
+     "cz": -193.6,
+     "r": 0.4,
+     "h": 4,
+     "rot": 0,
+     "couleur": "#4a4a4a"
+    },
+    {
+     "type": "cylinder",
+     "cx": 24.7,
+     "cz": -164.7,
+     "r": 0.4,
+     "h": 4,
+     "rot": 0,
+     "couleur": "#4a4a4a"
+    },
+    {
+     "type": "cylinder",
+     "cx": 18.7,
+     "cz": -142.5,
+     "r": 0.4,
+     "h": 4,
+     "rot": 0,
+     "couleur": "#4a4a4a"
+    },
+    {
+     "type": "light",
+     "x": 80.0,
+     "z": -166.0,
+     "y": 30.0,
+     "suspendu": true,
+     "couleur": "#ffe2a8",
+     "intensite": 1.6,
+     "label": "Façade occidentale"
+    },
+    {
+     "type": "light",
+     "x": 119.9,
+     "z": -154.4,
+     "y": 75.0,
+     "suspendu": true,
+     "couleur": "#ffe2a8",
+     "intensite": 1.6,
+     "label": "Dôme illuminé"
+    }
+   ]
+  },
+  {
+   "id": "parvis-lumiere",
+   "label": "Le parvis en lumière",
+   "theme": "lumiere",
+   "horizon": 3,
+   "desc": "Un cœur de lumière se dessinerait sur le parvis, et les candélabres restaurés éclaireraient le chemin du parking à la crypte.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 56.5,
+     "z": -255.5,
+     "y": 47.0,
+     "suspendu": true,
+     "couleur": "#ffd27a",
+     "intensite": 1.2,
+     "label": "Projecteurs du cœur rayonnant"
+    },
+    {
+     "type": "path",
+     "kind": "chemin",
+     "pts": [
+      [
+       15.0,
+       -114.0
+      ],
+      [
+       24.6,
+       -149.1
+      ],
+      [
+       73.0,
+       -147.0
+      ]
+     ],
+     "w": 3
+    },
+    {
+     "type": "light",
+     "x": -0.4,
+     "z": -162.1,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": -4.2,
+     "z": -146.2,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": -8.0,
+     "z": -130.2,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 2.8,
+     "z": -120.6,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 17.0,
+     "z": -112.5,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 31.3,
+     "z": -104.4,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 14.4,
+     "z": -232.7,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 10.7,
+     "z": -214.8,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré"
+    },
+    {
+     "type": "light",
+     "x": 7.0,
+     "z": -196.9,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré",
+     "sol": 0
+    },
+    {
+     "type": "light",
+     "x": 3.3,
+     "z": -179.0,
+     "y": 4.5,
+     "couleur": "#ffd9a0",
+     "intensite": 0.6,
+     "label": "Candélabre restauré",
+     "sol": 0
+    }
+   ]
+  },
+  {
+   "id": "nef-couronnes",
+   "label": "Couronnes de lumière dans la nef",
+   "theme": "lumiere",
+   "horizon": 3,
+   "desc": "Des couronnes de lumière, en écho à la rose du parvis, éclaireraient la nef et mettraient en valeur le reliquaire.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 83.7,
+     "z": -164.2,
+     "y": 22.0,
+     "suspendu": true,
+     "couleur": "#fff0c0",
+     "intensite": 1.0,
+     "label": "Couronne de lumière"
+    },
+    {
+     "type": "light",
+     "x": 95.3,
+     "z": -161.1,
+     "y": 22.0,
+     "suspendu": true,
+     "couleur": "#fff0c0",
+     "intensite": 1.0,
+     "label": "Couronne de lumière"
+    },
+    {
+     "type": "light",
+     "x": 106.9,
+     "z": -158.0,
+     "y": 22.0,
+     "suspendu": true,
+     "couleur": "#fff0c0",
+     "intensite": 1.0,
+     "label": "Couronne de lumière"
+    },
+    {
+     "type": "cylinder",
+     "cx": 83.7,
+     "cz": -164.2,
+     "r": 5,
+     "h": 0.4,
+     "rot": 0,
+     "couleur": "#d4af37",
+     "translucide": true,
+     "y": 22.0,
+     "suspendu": true
+    },
+    {
+     "type": "cylinder",
+     "cx": 95.3,
+     "cz": -161.1,
+     "r": 5,
+     "h": 0.4,
+     "rot": 0,
+     "couleur": "#d4af37",
+     "translucide": true,
+     "y": 22.0,
+     "suspendu": true
+    },
+    {
+     "type": "cylinder",
+     "cx": 106.9,
+     "cz": -158.0,
+     "r": 5,
+     "h": 0.4,
+     "rot": 0,
+     "couleur": "#d4af37",
+     "translucide": true,
+     "y": 22.0,
+     "suspendu": true
+    },
+    {
+     "type": "light",
+     "x": 120.9,
+     "z": -158.3,
+     "y": 8.0,
+     "suspendu": true,
+     "couleur": "#fff4d6",
+     "intensite": 0.8,
+     "label": "Reliquaire mis en valeur"
+    }
+   ]
+  },
+  {
+   "id": "crypte-lumiere",
+   "label": "La crypte mise en valeur",
+   "theme": "lumiere",
+   "horizon": 3,
+   "desc": "Les entrées de la crypte seraient éclairées et signalées depuis le parvis. Les mosaïques retrouveraient leurs couleurs.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 73.0,
+     "z": -147.0,
+     "y": 1.0,
+     "couleur": "#ffe0a0",
+     "intensite": 0.9,
+     "label": "Entrée de la crypte"
+    },
+    {
+     "type": "light",
+     "x": 99.5,
+     "z": -175.5,
+     "y": 1.0,
+     "couleur": "#ffe0a0",
+     "intensite": 0.9,
+     "label": "Entrée de la crypte"
+    },
+    {
+     "type": "light",
+     "x": 95.7,
+     "z": -158.9,
+     "y": 1.0,
+     "suspendu": true,
+     "couleur": "#fff6e8",
+     "intensite": 0.7,
+     "label": "Mosaïques de la crypte"
+    },
+    {
+     "type": "sign",
+     "x": 70.0,
+     "z": -150.0,
+     "label": "Crypte",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": 97.0,
+     "z": -178.0,
+     "label": "Crypte",
+     "rot": 15
+    }
+   ]
+  },
+  {
+   "id": "chemin-croix-nuit",
+   "label": "Le chemin de croix balisé",
+   "theme": "lumiere",
+   "horizon": 3,
+   "desc": "Des lanternes rénovées baliseraient chaque station, en gardant la pénombre propice à la prière.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 183.5,
+     "z": -140.3,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 193.0,
+     "z": -131.3,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 205.2,
+     "z": -130.8,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 217.9,
+     "z": -127.9,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 230.6,
+     "z": -125.4,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 242.7,
+     "z": -128.0,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 238.7,
+     "z": -140.1,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 228.7,
+     "z": -148.2,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 217.4,
+     "z": -154.9,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 205.3,
+     "z": -159.7,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 195.8,
+     "z": -154.5,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 189.9,
+     "z": -142.9,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 186.6,
+     "z": -130.2,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    },
+    {
+     "type": "light",
+     "x": 183.5,
+     "z": -117.4,
+     "y": 2.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.35,
+     "label": "Station balisée"
+    }
+   ]
+  },
+  {
+   "id": "chemin-marie",
+   "label": "Le chemin de Marie",
+   "theme": "paysage",
+   "horizon": 3,
+   "desc": "Des éclairages bas révéleraient les conques dédiées aux mystères de Marie, le long de la promenade.",
+   "geom": [
+    {
+     "type": "path",
+     "kind": "chemin",
+     "pts": [
+      [
+       -118.0,
+       18.0
+      ],
+      [
+       -104.0,
+       -8.0
+      ],
+      [
+       -86.0,
+       -40.0
+      ],
+      [
+       -71.2,
+       -69.0
+      ],
+      [
+       -65.8,
+       -101.0
+      ],
+      [
+       -53.5,
+       -144.0
+      ],
+      [
+       -41.2,
+       -178.8
+      ],
+      [
+       -26.9,
+       -207.6
+      ],
+      [
+       -6.4,
+       -234.2
+      ],
+      [
+       18.2,
+       -260.9
+      ],
+      [
+       46.9,
+       -277.2
+      ],
+      [
+       75.6,
+       -285.4
+      ],
+      [
+       96.1,
+       -280.5
+      ],
+      [
+       101.0,
+       -273.1
+      ],
+      [
+       72.5,
+       -259.5
+      ]
+     ],
+     "w": 3
+    },
+    {
+     "type": "light",
+     "x": -71.8,
+     "z": -67.7,
+     "y": 1.0,
+     "couleur": "#cfe0ff",
+     "intensite": 0.6,
+     "label": "Conque : mystère marial"
+    },
+    {
+     "type": "light",
+     "x": -58.0,
+     "z": -128.4,
+     "y": 1.0,
+     "couleur": "#cfe0ff",
+     "intensite": 0.6,
+     "label": "Conque : mystère marial"
+    },
+    {
+     "type": "light",
+     "x": -37.1,
+     "z": -187.0,
+     "y": 1.0,
+     "couleur": "#cfe0ff",
+     "intensite": 0.6,
+     "label": "Conque : mystère marial"
+    },
+    {
+     "type": "light",
+     "x": -2.5,
+     "z": -238.4,
+     "y": 1.0,
+     "couleur": "#cfe0ff",
+     "intensite": 0.6,
+     "label": "Conque : mystère marial"
+    },
+    {
+     "type": "light",
+     "x": 45.8,
+     "z": -276.6,
+     "y": 1.0,
+     "couleur": "#cfe0ff",
+     "intensite": 0.6,
+     "label": "Conque : mystère marial"
+    },
+    {
+     "type": "path",
+     "kind": "chemin",
+     "pts": [
+      [
+       -14.0,
+       -112.0
+      ],
+      [
+       -13.5,
+       -127.0
+      ],
+      [
+       -3.5,
+       -170.0
+      ],
+      [
+       1.0,
+       -186.0
+      ]
+     ],
+     "w": 2
+    },
+    {
+     "type": "light",
+     "x": -13.7,
+     "z": -119.6,
+     "y": 1.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.4,
+     "label": "Borne lumineuse"
+    },
+    {
+     "type": "light",
+     "x": -11.8,
+     "z": -134.5,
+     "y": 1.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.4,
+     "label": "Borne lumineuse"
+    },
+    {
+     "type": "light",
+     "x": -8.3,
+     "z": -149.3,
+     "y": 1.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.4,
+     "label": "Borne lumineuse"
+    },
+    {
+     "type": "light",
+     "x": -4.9,
+     "z": -164.0,
+     "y": 1.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.4,
+     "label": "Borne lumineuse"
+    },
+    {
+     "type": "light",
+     "x": -1.1,
+     "z": -178.7,
+     "y": 1.0,
+     "couleur": "#ffd9a0",
+     "intensite": 0.4,
+     "label": "Borne lumineuse"
+    }
+   ]
+  },
+  {
+   "id": "pavillon-expo",
+   "label": "Les miracles de Thérèse, l'expérience immersive",
+   "theme": "exposition",
+   "horizon": 2,
+   "desc": "Un pavillon raconterait la vie et les miracles de Thérèse, à l'arrivée des voitures et des cars.",
+   "geom": [
+    {
+     "type": "pavilion",
+     "cx": -50.0,
+     "cz": -49.0,
+     "w": 40,
+     "d": 25,
+     "h": 9,
+     "rot": -45.9,
+     "couleur": "#f2efe8",
+     "label": "Les miracles de Thérèse"
+    },
+    {
+     "type": "poi",
+     "id": "expo",
+     "label": "Les miracles de Thérèse",
+     "type_poi": "experience",
+     "x": -50.0,
+     "z": -49.0,
+     "y": 0,
+     "desc": "La vie et les miracles de Thérèse racontés dans une salle de projection immersive."
+    }
+   ]
+  },
+  {
+   "id": "prefiguration",
+   "label": "Un premier film immersif",
+   "theme": "exposition",
+   "horizon": 1,
+   "desc": "Dans l'Espace Saint-Jean-Paul II, un film immersif ferait découvrir la vie de Thérèse.",
+   "geom": [
+    {
+     "type": "poi",
+     "id": "prefiguration",
+     "label": "Film immersif",
+     "type_poi": "experience",
+     "x": 12.0,
+     "z": -186.0,
+     "y": -7.4,
+     "suspendu": true,
+     "desc": "Un film immersif sur la vie de Thérèse, dans l'Espace Saint-Jean-Paul II."
+    }
+   ]
+  },
+  {
+   "id": "musee-cire",
+   "label": "Le musée de cire rénové",
+   "theme": "exposition",
+   "horizon": 3,
+   "desc": "La scénographie du musée de cire serait renouvelée, avec un guide en plusieurs langues sur téléphone.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 62.5,
+     "z": -122.0,
+     "y": 2.0,
+     "couleur": "#ffe6c0",
+     "intensite": 0.7,
+     "label": "Musée de cire rénové"
+    }
+   ]
+  },
+  {
+   "id": "pixi-famille",
+   "label": "Pixi, l'espace des familles",
+   "theme": "exposition",
+   "horizon": 1,
+   "desc": "L'espace Pixi deviendrait le point de départ des familles, avec un parcours pensé pour les enfants.",
+   "geom": [
+    {
+     "type": "light",
+     "x": 93.8,
+     "z": -216.9,
+     "y": 7.0,
+     "suspendu": true,
+     "couleur": "#ffd0e0",
+     "intensite": 0.6,
+     "label": "Pixi : parcours enfants"
+    }
+   ]
+  },
+  {
+   "id": "signaletique",
+   "label": "Signalétique et plan d'orientation",
+   "theme": "signaletique",
+   "horizon": 1,
+   "desc": "Un plan d'orientation à l'entrée du parvis et des panneaux relieraient l'accueil, la basilique, la crypte et le chemin de croix.",
+   "geom": [
+    {
+     "type": "sign",
+     "x": 20.0,
+     "z": -118.0,
+     "label": "Plan d'orientation",
+     "rot": 129.1
+    },
+    {
+     "type": "sign",
+     "x": 112.0,
+     "z": -187.0,
+     "label": "Porte sud",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": 58.0,
+     "z": -118.0,
+     "label": "Musée de cire",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": 4.0,
+     "z": -176.0,
+     "label": "Boutique et Espace Saint-Jean-Paul II",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": 176.0,
+     "z": -150.0,
+     "label": "Chemin de croix : station I",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": -10.0,
+     "z": -90.0,
+     "label": "Basilique, crypte, exposition",
+     "rot": 129.1
+    }
+   ]
+  },
+  {
+   "id": "jalonnement",
+   "label": "Jalonnement depuis la gare",
+   "theme": "signaletique",
+   "horizon": 1,
+   "desc": "Des totems et un marquage au sol guideraient le piéton depuis la gare jusqu'à la basilique et au Carmel.",
+   "geom": [
+    {
+     "type": "path",
+     "kind": "chemin",
+     "pts": [
+      [
+       -288.2,
+       -300.0
+      ],
+      [
+       -290,
+       -262
+      ],
+      [
+       -316,
+       -188
+      ],
+      [
+       -312,
+       -164
+      ],
+      [
+       -268,
+       -100
+      ],
+      [
+       -240,
+       -76
+      ],
+      [
+       -232,
+       -87
+      ],
+      [
+       -226,
+       -46
+      ],
+      [
+       -198,
+       -25
+      ],
+      [
+       -144,
+       15
+      ],
+      [
+       -118.0,
+       18.0
+      ]
+     ],
+     "w": 2
+    },
+    {
+     "type": "sign",
+     "x": -288.2,
+     "z": -300.0,
+     "label": "Jalon : Basilique et Carmel",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -312.0,
+     "z": -164.0,
+     "label": "Jalon : Basilique par le chemin de Marie",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -198.0,
+     "z": -25.0,
+     "label": "Jalon : vers la basilique",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -116.0,
+     "z": 14.0,
+     "label": "Chemin de Marie : entrée",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -540.0,
+     "z": -2.0,
+     "label": "Carmel",
+     "rot": 0
+    }
+   ]
+  },
+  {
+   "id": "ligne-bleue",
+   "label": "La ligne bleue",
+   "theme": "signaletique",
+   "horizon": 1,
+   "desc": "La ligne bleue relierait de nouveau la basilique, les Buissonnets, la cathédrale et le Carmel, avec un récit à chaque étape.",
+   "geom": [
+    {
+     "type": "path",
+     "kind": "ligne-bleue",
+     "pts": [
+      [
+       4.0,
+       -98.0
+      ],
+      [
+       5.0,
+       -92.0
+      ],
+      [
+       -10.0,
+       -74.0
+      ],
+      [
+       -9.0,
+       -70.0
+      ],
+      [
+       -9.0,
+       -68.0
+      ],
+      [
+       -10.0,
+       -65.0
+      ],
+      [
+       -64.0,
+       -6.0
+      ],
+      [
+       -67.0,
+       -4.0
+      ],
+      [
+       -70.0,
+       -2.0
+      ],
+      [
+       -98.0,
+       7.0
+      ],
+      [
+       -99.0,
+       23.0
+      ],
+      [
+       -104.0,
+       23.0
+      ],
+      [
+       -112.0,
+       26.0
+      ],
+      [
+       -116.0,
+       30.0
+      ],
+      [
+       -118.0,
+       32.0
+      ],
+      [
+       -118.0,
+       36.0
+      ],
+      [
+       -118.0,
+       41.0
+      ],
+      [
+       -158.0,
+       68.0
+      ],
+      [
+       -221.0,
+       120.0
+      ],
+      [
+       -236.0,
+       131.0
+      ],
+      [
+       -254.0,
+       146.0
+      ],
+      [
+       -316.0,
+       194.0
+      ],
+      [
+       -415.0,
+       274.0
+      ],
+      [
+       -412.0,
+       278.0
+      ],
+      [
+       -410.0,
+       286.0
+      ],
+      [
+       -411.0,
+       294.0
+      ],
+      [
+       -398.0,
+       302.0
+      ],
+      [
+       -353.0,
+       316.0
+      ],
+      [
+       -342.0,
+       322.0
+      ],
+      [
+       -338.0,
+       326.0
+      ],
+      [
+       -334.0,
+       336.0
+      ],
+      [
+       -334.0,
+       351.0
+      ],
+      [
+       -352.0,
+       416.0
+      ],
+      [
+       -384.0,
+       518.0
+      ],
+      [
+       -390.0,
+       542.0
+      ],
+      [
+       -406.0,
+       582.0
+      ],
+      [
+       -414.0,
+       594.0
+      ],
+      [
+       -412.0,
+       612.0
+      ],
+      [
+       -416.0,
+       632.0
+      ],
+      [
+       -476.0,
+       792.0
+      ],
+      [
+       -490.0,
+       822.0
+      ],
+      [
+       -479.0,
+       822.0
+      ],
+      [
+       -476.0,
+       822.0
+      ],
+      [
+       -464.0,
+       818.0
+      ],
+      [
+       -425.0,
+       808.0
+      ],
+      [
+       -410.0,
+       803.0
+      ],
+      [
+       -396.0,
+       800.0
+      ],
+      [
+       -364.0,
+       796.0
+      ],
+      [
+       -344.0,
+       798.0
+      ],
+      [
+       -342.0,
+       902.0
+      ],
+      [
+       -381.1,
+       997.4
+      ],
+      [
+       -420.2,
+       1092.8
+      ],
+      [
+       -342.0,
+       902.0
+      ],
+      [
+       -344.0,
+       798.0
+      ],
+      [
+       -364.0,
+       796.0
+      ],
+      [
+       -381.0,
+       798.0
+      ],
+      [
+       -396.0,
+       800.0
+      ],
+      [
+       -410.0,
+       803.0
+      ],
+      [
+       -425.0,
+       808.0
+      ],
+      [
+       -476.0,
+       822.0
+      ],
+      [
+       -479.0,
+       822.0
+      ],
+      [
+       -490.0,
+       822.0
+      ],
+      [
+       -510.0,
+       822.0
+      ],
+      [
+       -540.0,
+       820.0
+      ],
+      [
+       -548.0,
+       818.0
+      ],
+      [
+       -548.0,
+       810.0
+      ],
+      [
+       -530.0,
+       713.0
+      ],
+      [
+       -508.0,
+       571.0
+      ],
+      [
+       -568.0,
+       551.0
+      ],
+      [
+       -578.0,
+       589.0
+      ],
+      [
+       -591.0,
+       586.0
+      ],
+      [
+       -578.0,
+       589.0
+      ],
+      [
+       -562.0,
+       524.0
+      ],
+      [
+       -556.0,
+       506.0
+      ],
+      [
+       -546.0,
+       478.0
+      ],
+      [
+       -522.0,
+       428.0
+      ],
+      [
+       -506.0,
+       400.0
+      ],
+      [
+       -474.0,
+       354.0
+      ],
+      [
+       -454.0,
+       330.0
+      ],
+      [
+       -440.0,
+       316.0
+      ],
+      [
+       -431.0,
+       292.0
+      ],
+      [
+       -440.0,
+       288.0
+      ],
+      [
+       -444.0,
+       282.0
+      ],
+      [
+       -442.0,
+       274.0
+      ],
+      [
+       -436.0,
+       272.0
+      ],
+      [
+       -441.0,
+       260.0
+      ],
+      [
+       -446.0,
+       211.0
+      ],
+      [
+       -452.0,
+       190.0
+      ],
+      [
+       -466.0,
+       171.0
+      ],
+      [
+       -476.0,
+       163.0
+      ],
+      [
+       -474.0,
+       158.0
+      ],
+      [
+       -510.0,
+       88.0
+      ],
+      [
+       -506.0,
+       86.0
+      ],
+      [
+       -510.0,
+       88.0
+      ],
+      [
+       -490.0,
+       125.0
+      ],
+      [
+       -474.0,
+       158.0
+      ],
+      [
+       -476.0,
+       163.0
+      ],
+      [
+       -466.0,
+       171.0
+      ],
+      [
+       -456.0,
+       184.0
+      ],
+      [
+       -452.0,
+       190.0
+      ],
+      [
+       -442.0,
+       184.0
+      ],
+      [
+       -436.0,
+       184.0
+      ],
+      [
+       -404.0,
+       198.0
+      ],
+      [
+       -410.0,
+       212.0
+      ],
+      [
+       -339.0,
+       184.0
+      ],
+      [
+       -330.0,
+       178.0
+      ],
+      [
+       -326.0,
+       173.0
+      ],
+      [
+       -322.0,
+       172.0
+      ],
+      [
+       -320.0,
+       161.0
+      ],
+      [
+       -314.0,
+       163.0
+      ],
+      [
+       -308.0,
+       160.0
+      ],
+      [
+       -294.0,
+       146.0
+      ],
+      [
+       -278.0,
+       138.0
+      ],
+      [
+       -262.0,
+       138.0
+      ],
+      [
+       -254.0,
+       146.0
+      ],
+      [
+       -221.0,
+       120.0
+      ],
+      [
+       -191.0,
+       95.0
+      ],
+      [
+       -158.0,
+       68.0
+      ],
+      [
+       -139.0,
+       56.0
+      ],
+      [
+       -118.0,
+       41.0
+      ],
+      [
+       -118.0,
+       36.0
+      ],
+      [
+       -118.0,
+       32.0
+      ],
+      [
+       -116.0,
+       30.0
+      ],
+      [
+       -112.0,
+       26.0
+      ],
+      [
+       -108.0,
+       24.0
+      ],
+      [
+       -104.0,
+       23.0
+      ],
+      [
+       -99.0,
+       23.0
+      ],
+      [
+       -99.0,
+       14.0
+      ],
+      [
+       -98.0,
+       7.0
+      ],
+      [
+       -96.0,
+       6.0
+      ],
+      [
+       -70.0,
+       -2.0
+      ],
+      [
+       -67.0,
+       -4.0
+      ],
+      [
+       -64.0,
+       -6.0
+      ],
+      [
+       -11.0,
+       -64.0
+      ],
+      [
+       -10.0,
+       -65.0
+      ],
+      [
+       -10.0,
+       -74.0
+      ],
+      [
+       -1.0,
+       -85.0
+      ],
+      [
+       5.0,
+       -92.0
+      ],
+      [
+       4.0,
+       -98.0
+      ]
+     ],
+     "w": 1.5
+    },
+    {
+     "type": "sign",
+     "x": 7.0,
+     "z": -95.0,
+     "label": "QR code : Ligne bleue (départ)",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -417.2,
+     "z": 1095.8,
+     "label": "QR code : Les Buissonnets",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -587.7,
+     "z": 616.1,
+     "label": "QR code : Cathédrale Saint-Pierre",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -484.1,
+     "z": 74.5,
+     "label": "QR code : Carmel (chapelle et châsse)",
+     "rot": 0
+    }
+   ]
+  },
+  {
+   "id": "navette",
+   "label": "La navette des lieux de Thérèse",
+   "theme": "mobilite",
+   "horizon": 2,
+   "desc": "En saison, une navette relierait la basilique, le Carmel, les Buissonnets et la gare.",
+   "geom": [
+    {
+     "type": "path",
+     "kind": "navette",
+     "pts": [
+      [
+       -118.0,
+       16.0
+      ],
+      [
+       -118.0,
+       36.0
+      ],
+      [
+       -118.0,
+       41.0
+      ],
+      [
+       -158.0,
+       68.0
+      ],
+      [
+       -221.0,
+       120.0
+      ],
+      [
+       -236.0,
+       131.0
+      ],
+      [
+       -254.0,
+       146.0
+      ],
+      [
+       -316.0,
+       194.0
+      ],
+      [
+       -415.0,
+       274.0
+      ],
+      [
+       -412.0,
+       278.0
+      ],
+      [
+       -410.0,
+       286.0
+      ],
+      [
+       -411.0,
+       294.0
+      ],
+      [
+       -398.0,
+       302.0
+      ],
+      [
+       -353.0,
+       316.0
+      ],
+      [
+       -342.0,
+       322.0
+      ],
+      [
+       -338.0,
+       326.0
+      ],
+      [
+       -334.0,
+       336.0
+      ],
+      [
+       -334.0,
+       351.0
+      ],
+      [
+       -352.0,
+       416.0
+      ],
+      [
+       -384.0,
+       518.0
+      ],
+      [
+       -390.0,
+       542.0
+      ],
+      [
+       -406.0,
+       582.0
+      ],
+      [
+       -414.0,
+       594.0
+      ],
+      [
+       -412.0,
+       612.0
+      ],
+      [
+       -416.0,
+       632.0
+      ],
+      [
+       -476.0,
+       792.0
+      ],
+      [
+       -490.0,
+       822.0
+      ],
+      [
+       -479.0,
+       822.0
+      ],
+      [
+       -476.0,
+       822.0
+      ],
+      [
+       -464.0,
+       818.0
+      ],
+      [
+       -425.0,
+       808.0
+      ],
+      [
+       -410.0,
+       803.0
+      ],
+      [
+       -396.0,
+       800.0
+      ],
+      [
+       -364.0,
+       796.0
+      ],
+      [
+       -344.0,
+       798.0
+      ],
+      [
+       -342.0,
+       902.0
+      ],
+      [
+       -381.1,
+       997.4
+      ],
+      [
+       -420.2,
+       1092.8
+      ]
+     ],
+     "w": 3
+    },
+    {
+     "type": "path",
+     "kind": "navette",
+     "pts": [
+      [
+       -410.0,
+       286.0
+      ],
+      [
+       -440,
+       288
+      ],
+      [
+       -436,
+       272
+      ],
+      [
+       -442,
+       250
+      ],
+      [
+       -452,
+       190
+      ],
+      [
+       -476,
+       163
+      ],
+      [
+       -502,
+       147
+      ],
+      [
+       -532,
+       125
+      ],
+      [
+       -551,
+       68
+      ],
+      [
+       -554,
+       14
+      ],
+      [
+       -556,
+       -4
+      ],
+      [
+       -560,
+       -24
+      ],
+      [
+       -514,
+       -69
+      ],
+      [
+       -451,
+       -133
+      ],
+      [
+       -383,
+       -206
+      ],
+      [
+       -372,
+       -214
+      ],
+      [
+       -316,
+       -188
+      ],
+      [
+       -290,
+       -262
+      ]
+     ],
+     "w": 3
+    },
+    {
+     "type": "sign",
+     "x": -118.0,
+     "z": 16.0,
+     "label": "Navette : arrêt Basilique",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -549.5,
+     "z": -2.5,
+     "label": "Navette : arrêt Carmel",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -420.2,
+     "z": 1085.0,
+     "label": "Navette : arrêt Buissonnets",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -290.0,
+     "z": -262.0,
+     "label": "Navette : arrêt Gare",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": 116.0,
+     "z": -192.0,
+     "label": "La suite : Carmel, Buissonnets, navette",
+     "rot": 15
+    }
+   ]
+  },
+  {
+   "id": "digital",
+   "label": "Bornes d'information",
+   "theme": "digital",
+   "horizon": 1,
+   "desc": "Des bornes aux points clés proposeraient information, intention de prière et don.",
+   "geom": [
+    {
+     "type": "sign",
+     "x": -6.0,
+     "z": -80.0,
+     "label": "Borne : information",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": -41.0,
+     "z": -40.3,
+     "label": "Borne : information et don",
+     "rot": 0
+    },
+    {
+     "type": "sign",
+     "x": 110.0,
+     "z": -186.0,
+     "label": "Borne : intention et don",
+     "rot": 15
+    },
+    {
+     "type": "sign",
+     "x": 10.0,
+     "z": -176.0,
+     "label": "Borne : information",
+     "rot": 15
+    }
+   ]
+  }
+ ]
+}
