@@ -192,7 +192,7 @@ function rendre(){
   $('#k-vis').textContent=n('vis');
   $('#k-emp').textContent=n('prevenir');
   const base=Math.max(n('ouv'),1);
-  const P=[['Page ouverte','ouv'],['Carton ouvert','carton'],['Lisieux 2030 lu','l2030'],['Infos pratiques vues','pratique'],['Bas de page atteint','fin']];
+  const P=[['Page ouverte','ouv'],['Carton ouvert','carton'],['Lisieux 2035 lu','l2030'],['Infos pratiques vues','pratique'],['Bas de page atteint','fin']];
   $('#parcours').innerHTML=P.map(([l,k])=>{const v=n(k),p=Math.round(100*v/base);return `<div class="rang"><span class="l">${l}</span><span class="piste"><i style="width:${Math.min(p,100)}%"></i></span><span class="v">${v}<em>${n('ouv')?p+' %':''}</em></span></div>`}).join('');
   const C=[['« J’ai un empêchement » ouvert','empeche'],['Mail d’empêchement préparé','prevenir'],['Numéro d’Olivier copié','tel'],['Mail d’Olivier copié','mail'],['Pluie de roses relancée','roses'],['Menu de navigation','nav'],['Liens externes','lien']];
   $('#clics').innerHTML=C.map(([l,k])=>`<div>${l}</div><div class="n">${n(k)}</div>`).join('');
